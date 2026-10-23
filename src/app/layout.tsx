@@ -10,6 +10,7 @@ import Header from "./components/shared/Header";
 import ScrollTopOnLoad from "./components/shared/ScrollTopOnLoad";
 
 const Footer = dynamic(() => import("./components/shared/Footer"));
+const FooterCta = dynamic(() => import("./components/shared/FooterCta"));
 
 const headFont = Host_Grotesk({
   subsets: ["latin"],
@@ -37,7 +38,12 @@ const layout = ({ children }: { children: ReactNode }) => {
           <ScrollTopOnLoad />
           <DeferredEffects />
           <Header />
-          <main data-mpx-inert>{children}</main>
+          <main data-mpx-inert className="relative z-2 rounded-b-3xl bg-(--mpx-paper)">
+            {children}
+            <Suspense>
+              <FooterCta />
+            </Suspense>
+          </main>
           <Suspense>
             <Footer />
           </Suspense>
