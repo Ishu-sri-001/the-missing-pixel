@@ -1,0 +1,345 @@
+/* Built using Hyperiux Vault: https://vault.hyperiux.com */
+
+.mpx-page,
+html:has(.mpx-page) {
+  --mpx-ink: #0a0a0a;
+  --mpx-white: #ffffff;
+  --mpx-paper: #f5f5f5;
+  --mpx-grey: #9a9a9a;
+  --mpx-muted: #5e5e5e;
+  --mpx-accent: #ff5f00;
+  --mpx-accent-light: #ffa033;
+  --mpx-accent-deep: #e83a00;
+  --mpx-surface: var(--mpx-paper);
+  --mpx-grad: linear-gradient(120deg, var(--mpx-accent-light) 0%, var(--mpx-accent) 50%, var(--mpx-accent-deep) 100%);
+}
+
+.mpx-page {
+  background-color: var(--mpx-paper);
+  color: var(--mpx-ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mpx-page,
+.mpx-page * {
+  font-family: var(--font-mpx-body);
+}
+
+.mpx-page h1,
+.mpx-page h2,
+.mpx-page h3,
+.mpx-page h1 *,
+.mpx-page h2 *,
+.mpx-page h3 *,
+.mpx-page .font-mpx-head,
+.mpx-page .font-mpx-head * {
+  font-family: var(--font-mpx-head);
+}
+
+.mpx-page .font-mpx-body,
+.mpx-page .mpx-eyebrow * {
+  font-family: var(--font-mpx-body);
+}
+
+.mpx-page h1,
+.mpx-page h2,
+.mpx-page h3 {
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.mpx-page h3 {
+  font-weight: 400;
+}
+
+.mpx-page h3 {
+  line-height: 1.2;
+}
+
+.mpx-page .mpx-eyebrow {
+  font-family: var(--font-mpx-body);
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+.mpx-page h1,
+.mpx-page .text-128 {
+  font-size: 6.6vw;
+  letter-spacing: -0.4vw;
+}
+
+.mpx-page h2 {
+  font-size: 4vw;
+  letter-spacing: -0.2vw;
+}
+
+.mpx-page .text-64 {
+  font-size: 3.4vw;
+  letter-spacing: -0.2vw;
+}
+
+.mpx-page .text-40 {
+  font-size: 2.1vw;
+  letter-spacing: -0.1vw;
+}
+
+.mpx-page .text-30 {
+  font-size: 1.6vw;
+}
+
+.mpx-page .text-28 {
+  font-size: 1.4vw;
+}
+
+.mpx-page .text-24 {
+  font-size: 1.2vw;
+}
+
+.mpx-page .text-22 {
+  font-size: 1.1vw;
+}
+
+.mpx-page .text-14 {
+  font-size: 0.9vw;
+}
+
+.mpx-page .bg-mpx-accent {
+  background-color: var(--mpx-accent);
+}
+
+.mpx-page .text-mpx-accent {
+  color: var(--mpx-accent);
+}
+
+.mpx-page .text-mpx-accent-deep {
+  color: var(--mpx-accent-deep);
+}
+
+.mpx-page .bg-mpx-grad {
+  background-image: var(--mpx-grad);
+}
+
+.mpx-page .bg-mpx-ink {
+  background-color: var(--mpx-ink);
+}
+
+.mpx-page .text-mpx-ink {
+  color: var(--mpx-ink);
+}
+
+.mpx-page .bg-mpx-paper {
+  background-color: var(--mpx-paper);
+}
+
+.mpx-page .text-mpx-paper {
+  color: var(--mpx-paper);
+}
+
+.mpx-page .text-mpx-muted {
+  color: var(--mpx-muted);
+}
+
+.mpx-page .bg-mpx-surface {
+  background-color: var(--mpx-surface);
+}
+
+.mpx-page .mpx-container {
+  padding-inline: 2.5%;
+}
+
+.mpx-page .mpx-section {
+  padding-block: 8%;
+}
+
+.mpx-page .mpx-mask-line {
+  display: block;
+  padding-block: 0.5vw;
+  margin-block: -0.5vw;
+  -webkit-mask-image: linear-gradient(150deg, var(--mpx-ink) 33.3%, transparent 66.6%);
+  mask-image: linear-gradient(150deg, var(--mpx-ink) 33.3%, transparent 66.6%);
+  -webkit-mask-size: 500% 100%;
+  mask-size: 500% 100%;
+  -webkit-mask-position: 100% 100%;
+  mask-position: 100% 100%;
+}
+
+.mpx-page :has(> .mpx-mask-line) {
+  display: flex;
+  flex-direction: column;
+}
+
+.mpx-page ::selection {
+  background-color: var(--mpx-accent);
+  color: var(--mpx-ink);
+}
+
+.mpx-page ::-moz-selection {
+  background-color: var(--mpx-accent);
+  color: var(--mpx-ink);
+}
+
+html:has(.mpx-page),
+html:has(.mpx-page) body {
+  background-color: var(--mpx-paper);
+  scrollbar-color: var(--mpx-accent) transparent;
+  scrollbar-width: thin;
+}
+
+html:has(.mpx-page) ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html:has(.mpx-page) ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html:has(.mpx-page) ::-webkit-scrollbar-thumb {
+  background-color: var(--mpx-accent);
+  border-radius: 9999px;
+}
+
+.mpx-page [data-mpx-journal-slider] {
+  scrollbar-width: none;
+}
+
+html:has(.mpx-page) [data-mpx-journal-slider]::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+@media (max-width: 1025px) {
+  .mpx-page h1,
+  .mpx-page .text-128 {
+    font-size: 9vw;
+    letter-spacing: -0.4vw;
+  }
+
+  .mpx-page h2,
+  .mpx-page .text-64 {
+    font-size: 6vw;
+    letter-spacing: -0.2vw;
+  }
+
+  .mpx-page .text-40 {
+    font-size: 4.6vw;
+    letter-spacing: -0.1vw;
+  }
+
+  .mpx-page h3.text-30 {
+    font-size: 3.8vw;
+  }
+
+  .mpx-page h3.text-28 {
+    font-size: 3.4vw;
+  }
+
+  .mpx-page .text-30 {
+    font-size: 3.6vw;
+  }
+
+  .mpx-page .text-28 {
+    font-size: 3.2vw;
+  }
+
+  .mpx-page .text-24 {
+    font-size: 2.8vw;
+  }
+
+  .mpx-page .text-22 {
+    font-size: 2.5vw;
+  }
+
+  .mpx-page .text-14 {
+    font-size: 1.9vw;
+  }
+
+  .mpx-page .mpx-container {
+    padding-inline: 4%;
+  }
+
+  .mpx-page .mpx-mask-line {
+    padding-block: 0.6vw;
+    margin-block: -0.6vw;
+  }
+
+  .mpx-page .mpx-section {
+    padding-block: 11%;
+  }
+}
+
+@media (max-width: 767px) {
+  .mpx-page h1,
+  .mpx-page .text-128 {
+    font-size: 11.5vw;
+    letter-spacing: -0.5vw;
+  }
+
+  .mpx-page h2,
+  .mpx-page .text-64 {
+    font-size: 10.5vw;
+    letter-spacing: -0.4vw;
+  }
+
+  .mpx-page .text-40 {
+    font-size: 6.8vw;
+    letter-spacing: -0.2vw;
+  }
+
+  .mpx-page h3.text-30 {
+    font-size: 6.2vw;
+  }
+
+  .mpx-page h3.text-28 {
+    font-size: 5.4vw;
+  }
+
+  .mpx-page .text-30 {
+    font-size: 5.6vw;
+  }
+
+  .mpx-page .text-28 {
+    font-size: 4.8vw;
+  }
+
+  .mpx-page .text-24 {
+    font-size: 4.4vw;
+  }
+
+  .mpx-page .text-22 {
+    font-size: 4.2vw;
+  }
+
+  .mpx-page .text-14 {
+    font-size: 3.3vw;
+  }
+
+
+  .mpx-page .mpx-container {
+    padding-inline: 5%;
+  }
+
+  .mpx-page .mpx-mask-line {
+    padding-block: 1vw;
+    margin-block: -1vw;
+  }
+
+  .mpx-page .mpx-section {
+    padding-block: 20%;
+  }
+}
+
+@keyframes mpx-globe-ping {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
